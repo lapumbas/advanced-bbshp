@@ -41,127 +41,115 @@
     </button>
   </header>
 
-  <main class="main">
-    <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
+  <main class="form-main">
+    <h1 class="form-main__title">Запись на стрижку</h1>
+    <a class="button form-main__to-home" href="index.html">На главную</a>
+    <form class="book-form form-main__form" action="" method="GET">
 
-    <section class="statistics">
-      <h2 class="statistics__title">Стрижка у нас
-        <br> это выгодно!</h2>
-      <p class="statistics__slogan">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
-      <legend class="statistics__legend statistics__legend--top">
-        <sup>*</sup>— приведённые данные ложь</legend>
-      <table class="statistics__table">
-        <tr class="statistics__table-row">
-          <td class="statistics__price-cell">1 500
-            <sup>*</sup>
-          </td>
-          <td class="statistics__description-cell">рублей вложений</td>
-        </tr>
-        <tr class="statistics__table-row">
-          <td class="statistics__price-cell">7 200</td>
-          <td class="statistics__description-cell">секунд времени мастера</td>
-        </tr>
-        <tr class="statistics__table-row">
-          <td class="statistics__price-cell">90 000</td>
-          <td class="statistics__description-cell">постриженных волос</td>
-        </tr>
-        <tr class="statistics__table-row">
-          <td class="statistics__price-cell">500 000
-            <sup>*</sup>
-          </td>
-          <td class="statistics__description-cell">лайков и комплиментов</td>
-        </tr>
-      </table>
-      <legend class="statistics__legend statistics__legend--bottom">
-        <sup>*</sup>— приведённые данные ложь</legend>
-    </section>
+      <fieldset class="book-form__fieldset">
+        <legend class="book-form__legend">
+          <span class="visually-hidden">Мои данные</span>
+        </legend>
 
-    <section class="features slider">
-      <ul class="features__list slider__list">
-        <li class="features__item features__item--fast slider__item">
-          <h2 class="features__title">БЫСТРО</h2>
-          <p class="features__text">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки</p>
-        </li>
-        <li class="features__item features__item--cool slider__item">
-          <h2 class="features__title">КРУТО</h2>
-          <p class="features__text">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.
-          </p>
-        </li>
-        <li class="features__item features__item--expensive slider__item">
-          <h2 class="features__title">ДОРОГО</h2>
-          <p class="features__text">Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
-        </li>
-      </ul>
-      <div class="features__knobs slider__buttons">
-        <input class="slider__button" type="radio" name="features-radio" value="slide-1" id="features-slide-1" checked>
-        <label class="slider__label" for="features-slide-1">
-          <span class="visually-hidden">Слайд 1</span>
+        <div class="book-form__client-wrapper">
+          <label>
+            <input class="book-form__input" type="text" name="surname" placeholder="Фамилия">
+            <span class="visually-hidden">Фамилия</span>
+          </label>
+          <label>
+            <input class="book-form__input" type="text" name="name" placeholder="Имя">
+            <span class="visually-hidden">Имя</span>
+          </label>
+          <label>
+            <input class="book-form__input" type="text" name="middle-name" placeholder="Отчество">
+            <span class="visually-hidden">Отчество</span>
+          </label>
+        </div>
+
+        <div class="book-form__contacts-wrapper">
+          <label>
+            <input class="book-form__input" type="text" name="phone" placeholder="Контактный телефон">
+            <span class="visually-hidden">Контактный телефон</span>
+          </label>
+          <label>
+            <input class="book-form__input" type="email" name="email" placeholder="Контактный e-mail">
+            <span class="visually-hidden">Контактный e-mail</span>
+          </label>
+        </div>
+
+        <label>
+          <textarea name="info" cols="30" rows="10" placeholder="Доп. информация для мастера"></textarea>
+          <span class="visually-hidden">Доп. информация для мастера</span>
         </label>
-        <input class="slider__button" type="radio" name="features-radio" value="slide-2" id="features-slide-2">
-        <label class="slider__label" for="features-slide-2">
-          <span class="visually-hidden">Слайд 2</span>
-        </label>
-        <input class="slider__button" type="radio" name="features-radio" value="slide-3" id="features-slide-3">
-        <label class="slider__label" for="features-slide-3">
-          <span class="visually-hidden">Слайд 3</span>
-        </label>
-      </div>
-    </section>
 
-    <section class="news">
-      <h2 class="news__title">Новости и акции</h2>
-      <ul class="news__list">
-        <li class="news__item">
-          <p class="news__date">
-            <p class="news__day">29</p>
-            <p class="news__month">сент</p>
-          </p>
-          <p class="news__text">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
-        </li>
-        <li class="news__item">
-          <p class="news__date">
-            <p class="news__day">19</p>
-            <p class="news__month">сент</p>
-          </p>
-          <p class="news__text">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные
-            ряды. Спешите записаться!</p>
-        </li>
-      </ul>
-      <a class="button news__button" href="">показать все</a>
-    </section>
+      </fieldset>
 
-    <section class="reviews">
-      <h2 class="reviews__title">Отзывы о нас</h2>
-      <a class="button reviews__button" href="">Оставить свой</a>
-      <div class="reviews__wrapper slider">
-        <button class="reviews__button reviews__button--back">Предыдущий слайд</button>
-        <ul class="reviews__list slider__list">
-          <li class="reviews__item slider__item">
-            <img class="reviews__photo" src="http://placehold.it/50x51" width="50" height="51" alt="фото клиента">
-            <div class="reviews__text">
-              <b class="reviews__author">Трэвис Баркер</b>
-              <p class="reviews__review">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
-            </div>
+      <fieldset class="book-form__fieldset">
+        <legend class="book-form__legend">
+          ВЫберите модель бороды:
+        </legend>
+        <ul class="book-form__model-list">
+          <li class="book-form__model-item">
+            <input class="book-form__radio" type="radio" name="beard-model" value="admiral" id="admiral" checked>
+            <label class="book-form__beard-label" for="admiral">адмирал</label>
           </li>
-          <li class="reviews__item slider__item">
-            <img class="reviews__photo" src="http://placehold.it/50x51" width="50" height="51" alt="фото клиента">
-            <div class="reviews__text">
-              <b class="reviews__author">Джон Смит</b>
-              <p class="reviews__review">Отличную стрижку мне сделали ребята.</p>
-            </div>
+          <li class="book-form__model-item">
+            <input class="book-form__radio" type="radio" name="beard-model" value="lumberjack" id="lumberjack">
+            <label class="book-form__beard-label" for="lumberjack">лесоруб</label>
           </li>
-          <li class="reviews__item slider__item">
-            <img class="reviews__photo" src="http://placehold.it/50x51" width="50" height="51" alt="фото клиента">
-            <div class="reviews__text">
-              <b class="reviews__author">Иван Бородайло</b>
-              <p class="reviews__review">В Бородинском ваша борода в надёжных руках.</p>
-            </div>
+          <li class="book-form__model-item">
+            <input class="book-form__radio" type="radio" name="beard-model" value="polar" id="polar">
+            <label class="book-form__beard-label" for="polar">полярник</label>
+          </li>
+          <li class="book-form__model-item">
+            <input class="book-form__radio" type="radio" name="beard-model" value="boyar" id="boyar">
+            <label class="book-form__beard-label" for="boyar">боярин</label>
+          </li>
+          <li class="book-form__model-item">
+            <input class="book-form__radio" type="radio" name="beard-model" value="wise" id="wise">
+            <label class="book-form__beard-label" for="wise">мудрец</label>
           </li>
         </ul>
-        <button class="reviews__button reviews__button--back">Следующий слайд</button>
-      </div>
-    </section>
+      </fieldset>
+
+
+      <fieldset class="book-form__fieldset">
+        <legend class="book-form__legend">
+          Дополнительные услуги:
+        </legend>
+
+        <ul class="book-form__services-list">
+            <li class="book-form__services-item">
+              <input class="book-form__checkbox" type="checkbox" name="beard-model" value="tint" id="tint" checked>
+              <label class="book-form__services-label" for="tint">Подкрасить бороду</label>
+            </li>
+            <li class="book-form__services-item">
+              <input class="book-form__checkbox" type="checkbox" name="beard-model" value="wind" id="wind" checked>
+              <label class="book-form__services-label" for="wind">Накрутить усы</label>
+            </li>
+            <li class="book-form__services-item">
+              <input class="book-form__checkbox" type="checkbox" name="beard-model" value="comb" id="comb">
+              <label class="book-form__services-label" for="comb">Причесать бороду</label>
+            </li>
+            <li class="book-form__services-item">
+              <input class="book-form__checkbox" type="checkbox" name="beard-model" value="trim" id="trim">
+              <label class="book-form__services-label" for="trim">Подровнять виски</label>
+            </li>
+            <li class="book-form__services-item">
+              <input class="book-form__checkbox" type="checkbox" name="beard-model" value="remove" id="remove">
+              <label class="book-form__services-label" for="remove">Убрать седину</label>
+            </li>
+            <li class="book-form__services-item">
+              <input class="book-form__checkbox" type="checkbox" name="beard-model" value="polish" id="polish">
+              <label class="book-form__services-label" for="polish">Отполировать лысину</label>
+            </li>
+          </ul>
+      </fieldset>
+      <button class="button book-form__submit" type="submit">Отправить заявку</button>
+    </form>
+
   </main>
+
 
   <footer class="main-footer">
     <section class="address main-footer__address">
@@ -203,29 +191,7 @@
 
   </footer>
 
-  <section class="login-popup">
-    <form class="login-popup__form" action="" method="POST">
-      <h2 class="login-popup__title">ЛИЧНЫЙ КАБИНЕТ</h2>
-      <p class="login-popup__info">Введите свой логин и пароль, чтобы войти</p>
-      <input class="login-popup__input" type="text" name="login" id="login-field" placeholder="Логин">
-      <label for="login-field">
-        <span class="visually-hidden">Login</span>
-      </label>
-      <input class="login-popup__input" type="password" name="password" id="password-field" placeholder="Пароль">
-      <label for="password-field">
-        <span class="visually-hidden">Password</span>
-      </label>
-      <p class="login-popup__wrapper">
-        <input class="login-popup__checkbox" type="checkbox" name="remember" id="remember-field">
-        <label for="remember-field">Запомните меня</label>
-        <a class="login-popup__miss" href="">Я забыл пароль!</a>
-      </p>
-      <p class="login-popup__buttons-wrapper">
-        <button class="button login-popup__submit" type="submit">Войти</button>
-        <button class="button login-popup__close" type="submit">ЗАКРЫТЬ</button>
-      </p>
-    </form>
-  </section>
+
 
 </body>
 
