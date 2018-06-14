@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Barbershop Photo</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <a class="main-header__logo-link" href="">
+      <img src="http://placehold.it/226x30" width="226" height="30" alt="Barbershop logo">
+    </a>
+    <nav class="main-header__navigation">
+      <h2 class="visually-hidden">Навигация по сайту</h2>
+      <ul class="main-header__site-navigation-list">
+        <li class="main-header__site-navigation-item">
+          <a class="main-header__site-navigation-link" href="">Главная</a>
+        </li>
+        <li class="main-header__site-navigation-item">
+          <a class="main-header__site-navigation-link" href="">Наши работы</a>
+        </li>
+        <li class="main-header__site-navigation-item">
+          <a class="main-header__site-navigation-link" href="">Записаться</a>
+        </li>
+        <li class="main-header__site-navigation-item">
+          <a class="main-header__site-navigation-link" href="">Контакты</a>
+        </li>
+        <li class="main-header__site-navigation-item">
+          <a class="main-header__site-navigation-link" href="">HTML Academy</a>
+        </li>
+      </ul>
+      <ul class="main-header__user-navigation-list">
+        <li class="main-header__user-navigation-item">
+          <a class="main-header__user-navigation-link" href="">Войти</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="main-header__toggle">
+      <span class="visually-hidden">Разверуть</span>
+    </button>
+  </header>
+
+  <main class="photo-main">
+    <h1 class="photo-main__title">наши работы</h1>
+
+    <ul class="photo">
+      <li class="photo__item photo__item--best">
+        <img class="photo__image" src="http://placehold.it/280x480" alt="Лжепётр Мчиславский">
+        <div class="photo__description">
+          <b class="photo__name">Лжепётр Мчиславский</b>
+          <p class="photo__text">Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
+          <ul class="photo__options-list">
+            <li class="photo__option">Стрижка</li>
+            <li class="photo__option">Бритье</li>
+            <li class="photo__option">Усы</li>
+          </ul>
+        </div>
+      </li>
+      <li class="photo__item">
+        <img class="photo__image" src="http://placehold.it/280x176" alt="Саша Мальцев">
+        <div class="photo__description">
+          <b class="photo__name">Саша Мальцев</b>
+          <p class="photo__text">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45? </p>
+          <ul class="photo__options-list">
+            <li class="photo__option">Стрижка</li>
+          </ul>
+        </div>
+      </li>
+      <li class="photo__item">
+        <img class="photo__image" src="http://placehold.it/280x176" alt="Владимир Иваныч">
+        <div class="photo__description">
+          <b class="photo__name">Владимир Иваныч</b>
+          <p class="photo__text">К зимнему сезону — готов!</p>
+          <ul class="photo__options-list">
+            <li class="photo__option">Стрижка</li>
+            <li class="photo__option">Усы</li>
+          </ul>
+        </div>
+      </li>
+      <li class="photo__item">
+        <img class="photo__image" src="http://placehold.it/280x176" alt="Винстон Синий">
+        <div class="photo__description">
+          <b class="photo__name">Винстон Синий</b>
+          <p class="photo__text">Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
+          <ul class="photo__options-list">
+            <li class="photo__option">Стрижка</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+
+    <section class="pricelist">
+      <h2 class="pricelist__title">ПРЕЙСКУРАНТ</h2>
+      <table class="pricelist__table">
+        <tr class="pricelist__table-row">
+          <td class="pricelist__service">Классическая стрижка
+            <br> (с мытьём головы)</td>
+          <td class="pricelist__price">1 500 руб.</td>
+        </tr>
+        <tr class="pricelist__table-row">
+          <td class="pricelist__service">Современный вариант
+            <br> (с мытьём головы)</td>
+          <td class="pricelist__price">1 500 руб.</td>
+        </tr>
+        <tr class="pricelist__table-row">
+          <td class="pricelist__service">
+            Индивидуальный подход
+            <br> (с мытьём головы)</td>
+          <td class="pricelist__price">2 000 руб.</td>
+        </tr>
+        <tr class="pricelist__table-row">
+          <td class="pricelist__service">Бритьё головы
+            <br> (без мытья)</td>
+          <td class="pricelist__price">500 руб.</td>
+        </tr>
+        <tr class="pricelist__table-row">
+          <td class="pricelist__service">Бритьё головы
+            <br> (с мытьём головы)</td>
+          <td class="pricelist__price">1 000 руб.</td>
+        </tr>
+      </table>
+
+      <article class="pricelist__discount">
+        <h2 class="visually-hidden">СКИДКА</h2>
+        <img class="pricelist__clock" src="http://placehold.it/58x57" alt="clock">
+        <p class="pricelist__discount-text">C 10:00 до 14:00
+          <br> скидка 20%</p>
+      </article>
+    </section>
+
+  </main>
+
+
+
+
+  <footer class="main-footer">
+    <section class="address main-footer__address">
+      <h2 class="visually-hidden">Наш адрес</h2>
+      <b class="address__title">Барбершоп Бородинский</b>
+      <p class="address__address">г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+        <br>
+        <a class="address__phone-link" href="tel:+78125556666">
+          <span class="address__phone">+7 (812) 555-66-66</span>
+        </a>
+      </p>
+    </section>
+
+    <section class="social main-footer__social">
+      <h2 class="visually-hidden">Мы в соцсетях</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="">
+            <span class="visually-hidden">В контакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--inst" href="">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="copyright main-footer__copyright">
+      <p class="copyright__text">Разработано:</p>
+      <a class="button copyright__link" href="">HTML ACADEMY</a>
+    </div>
+
+  </footer>
+
+
+
+</body>
+
+</html>
