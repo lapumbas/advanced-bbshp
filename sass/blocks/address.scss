@@ -1,0 +1,41 @@
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.address__title {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.address__address {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.address__phone-link {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #3f3f3f;
+}
+
+.address__phone {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+}

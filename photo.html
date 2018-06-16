@@ -4,12 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Barbershop Photo</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="main-header">
     <a class="main-header__logo-link" href="">
-      <img src="http://placehold.it/226x30" width="226" height="30" alt="Barbershop logo">
+      <img src="img/logotype-mobile.svg" width="226" height="30" alt="Barbershop logo">
     </a>
     <nav class="main-header__navigation">
       <h2 class="visually-hidden">Навигация по сайту</h2>
@@ -17,7 +19,7 @@
         <li class="main-header__site-navigation-item">
           <a class="main-header__site-navigation-link" href="">Главная</a>
         </li>
-        <li class="main-header__site-navigation-item">
+        <li class="main-header__site-navigation-item main-header__site-navigation-item--active">
           <a class="main-header__site-navigation-link" href="">Наши работы</a>
         </li>
         <li class="main-header__site-navigation-item">
@@ -29,62 +31,68 @@
         <li class="main-header__site-navigation-item">
           <a class="main-header__site-navigation-link" href="">HTML Academy</a>
         </li>
-      </ul>
-      <ul class="main-header__user-navigation-list">
-        <li class="main-header__user-navigation-item">
-          <a class="main-header__user-navigation-link" href="">Войти</a>
+        <li class="main-header__site-navigation-item">
+          <a class="main-header__site-navigation-link" href="">Войти</a>
         </li>
       </ul>
+      <button class="main-header__toggle">
+        <svg width="36" height="20" xmlns="http://www.w3.org/2000/svg">
+          <g fill="#fff">
+            <path d="m0 10a1.07 1.07 0 0 0 1.13 1h33.67a1.07 1.07 0 0 0 1.13-1 1.07 1.07 0 0 0 -1.13-1h-33.67a1.07 1.07 0 0 0 -1.13 1z"
+            />
+            <path d="m1.13 0a1.07 1.07 0 0 0 -1.13 1 1.07 1.07 0 0 0 1.13 1h33.67a1.07 1.07 0 0 0 1.13-1 1.07 1.07 0 0 0 -1.13-1z" />
+            <path d="m0 19a1.07 1.07 0 0 0 1.13 1h33.67a1 1 0 1 0 0-2h-33.67a1.07 1.07 0 0 0 -1.13 1z" />
+          </g>
+        </svg>
+        <span class="visually-hidden">Разверуть</span>
+      </button>
     </nav>
-    <button class="main-header__toggle">
-      <span class="visually-hidden">Разверуть</span>
-    </button>
   </header>
 
   <main class="photo-main">
     <h1 class="photo-main__title">наши работы</h1>
 
-    <ul class="photo">
+    <ul class="photo photo-main__photo">
       <li class="photo__item photo__item--best">
-        <img class="photo__image" src="http://placehold.it/280x480" alt="Лжепётр Мчиславский">
+        <img class="photo__image photo__image--best" src="img/photo-1-mobile.jpg" alt="Лжепётр Мчиславский">
         <div class="photo__description">
           <b class="photo__name">Лжепётр Мчиславский</b>
           <p class="photo__text">Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
           <ul class="photo__options-list">
-            <li class="photo__option">Стрижка</li>
-            <li class="photo__option">Бритье</li>
-            <li class="photo__option">Усы</li>
+            <li class="photo__option photo__option--cut">Стрижка</li>
+            <li class="photo__option photo__option--shave">Бритье</li>
+            <li class="photo__option photo__option--whiskers">Усы</li>
           </ul>
         </div>
       </li>
       <li class="photo__item">
-        <img class="photo__image" src="http://placehold.it/280x176" alt="Саша Мальцев">
+        <img class="photo__image" src="img/photo-2-mobile.jpg" alt="Саша Мальцев">
         <div class="photo__description">
           <b class="photo__name">Саша Мальцев</b>
           <p class="photo__text">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45? </p>
           <ul class="photo__options-list">
-            <li class="photo__option">Стрижка</li>
+            <li class="photo__option photo__option--cut">Стрижка</li>
           </ul>
         </div>
       </li>
       <li class="photo__item">
-        <img class="photo__image" src="http://placehold.it/280x176" alt="Владимир Иваныч">
+        <img class="photo__image" src="img/photo-3-mobile.jpg" alt="Владимир Иваныч">
         <div class="photo__description">
           <b class="photo__name">Владимир Иваныч</b>
           <p class="photo__text">К зимнему сезону — готов!</p>
           <ul class="photo__options-list">
-            <li class="photo__option">Стрижка</li>
-            <li class="photo__option">Усы</li>
+            <li class="photo__option photo__option--cut">Стрижка</li>
+            <li class="photo__option photo__option--whiskers">Усы</li>
           </ul>
         </div>
       </li>
       <li class="photo__item">
-        <img class="photo__image" src="http://placehold.it/280x176" alt="Винстон Синий">
+        <img class="photo__image" src="img/photo-4-mobile.jpg" alt="Винстон Синий">
         <div class="photo__description">
           <b class="photo__name">Винстон Синий</b>
           <p class="photo__text">Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
           <ul class="photo__options-list">
-            <li class="photo__option">Стрижка</li>
+            <li class="photo__option photo__option--cut">Стрижка</li>
           </ul>
         </div>
       </li>
@@ -135,44 +143,47 @@
 
 
   <footer class="main-footer">
-    <section class="address main-footer__address">
-      <h2 class="visually-hidden">Наш адрес</h2>
-      <b class="address__title">Барбершоп Бородинский</b>
-      <p class="address__address">г. Санкт-Петербург, ул. Большая Конюшенная 19/8
-        <br>
-        <a class="address__phone-link" href="tel:+78125556666">
-          <span class="address__phone">+7 (812) 555-66-66</span>
-        </a>
-      </p>
-    </section>
-
-    <section class="social main-footer__social">
-      <h2 class="visually-hidden">Мы в соцсетях</h2>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="">
-            <span class="visually-hidden">В контакте</span>
+      <section class="address main-footer__address">
+        <h2 class="visually-hidden">Наш адрес</h2>
+        <b class="address__title">Барбершоп Бородинский</b>
+        <p class="address__address">г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+          <br>
+          <a class="button address__phone-link" href="tel:+78125556666">
+            <span class="address__phone">+7 (812) 555-66-66</span>
           </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--fb" href="">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--inst" href="">
-            <span class="visually-hidden">Instagram</span>
-          </a>
-        </li>
-      </ul>
-    </section>
+        </p>
+      </section>
 
-    <div class="copyright main-footer__copyright">
-      <p class="copyright__text">Разработано:</p>
-      <a class="button copyright__link" href="">HTML ACADEMY</a>
-    </div>
+      <section class="social main-footer__social">
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <div class="social__list">
+          <div class="social__item">
+            <a class="social__link social__link--vk" href="">
+              <img src="img/vk-big.png" alt="В контакте">
+              <span class="visually-hidden">В контакте</span>
+            </a>
+          </div>
+          <div class="social__item">
+            <a class="social__link social__link--fb" href="">
+              <img src="img/fb-big.png" alt="Facebook">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </div>
+          <div class="social__item">
+            <a class="social__link social__link--inst" href="">
+              <img src="img/ig-big.png" alt="Instagram">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </div>
+        </div>
+      </section>
 
-  </footer>
+      <div class="copyright main-footer__copyright">
+        <p class="copyright__text">Разработано:</p>
+        <a class="button copyright__link" href="">HTML ACADEMY</a>
+      </div>
+
+    </footer>
 
 
 

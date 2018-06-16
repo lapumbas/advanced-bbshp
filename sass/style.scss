@@ -1,0 +1,44 @@
+// @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic');
+
+@import 'normalize/variables';
+@import 'normalize/vertical-rhythm';
+@import 'normalize/normalize-mixin';
+@import "blocks/main-header";
+@import "blocks/button";
+@import "blocks/main";
+@import "blocks/statistics";
+@import "blocks/features";
+@import "blocks/slider";
+@import "blocks/news";
+@import "blocks/reviews";
+@import "blocks/main-footer";
+@import "blocks/address";
+@import "blocks/social";
+@import "blocks/copyright";
+@import "blocks/photo-main";
+@import "blocks/photo";
+@import "body";
+@import "visually-hidden";
+@import "container";
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.content-box-component {
+  box-sizing: content-box;
+}
+
+
+

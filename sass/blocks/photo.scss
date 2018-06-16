@@ -1,0 +1,122 @@
+$photo-height: 176px;
+.photo {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.photo__item {
+  &--best {
+    position: relative;
+    &::before {
+      content: "Работа месяца";
+      position: absolute;
+      display: block;
+      width: 176px;
+      height: 50px;
+      background: url("../../img/best-work.svg") no-repeat 0 0;
+      left: 0;
+      top: 400px;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 27px;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.photo__image {
+  display: block;
+  width: 100%;
+  height: $photo-height;
+  object-fit: cover;
+  &--best {
+    height: 480px;
+  }
+}
+
+.photo__description {
+  margin-top: 23px;
+  padding: 0 20px;
+}
+
+.photo__name {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.photo__text {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.photo__options-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.photo__option {
+  position: relative;
+  padding-left: 40px;
+  width: 120px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  &--cut {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 20px;
+      background: url("../../img/scissors-icon.svg") no-repeat 0 0;
+      left: 0;
+      top: 2px;
+    }
+  }
+  &--shave {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 20px;
+      background: url("../../img/beard-icon.svg") no-repeat 0 0;
+      left: 0;
+      top: 2px;
+    }
+  }
+  &--whiskers {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 12px;
+      background: url("../../img/mustache-icon.svg") no-repeat 0 0;
+      left: -10px;
+      top: 7px;
+    }
+  }
+}
